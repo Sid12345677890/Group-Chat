@@ -1,0 +1,59 @@
+/* Page Background */
+body {
+    background: #f2f3f7;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+}
+
+/* Page Title */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+/* Chat Box */
+.chat {
+    width: 60%;
+    background: #ffffff;
+    padding: 15px 20px;
+    margin: 15px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+    border-left: 5px solid #4caf50; /* Colored left border */
+}
+
+/* Chat Text */
+.chat p {
+    margin: 5px 0;
+    color: #444;
+    font-size: 18px;
+}
+
+/* Labels (From, To, Message, etc.) */
+.chat p span {
+    font-weight: bold;
+    color: #222;
+}
+
+/* Subtle Hover Effect */
+.chat:hover {
+    transform: translateY(-2px);
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+button{
+  background-color: #ffffff;
+    margin-bottom: 2px;
+    border-color: #ffffff;
+    box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.10);
+    border-bottom:2px solid greenyellow;
+    padding: 4px;
+    border-radius: 12px;
+
+}
+.Gap{
+   margin: 10px;
+   padding:3px;
+}
