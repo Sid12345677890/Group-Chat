@@ -18,10 +18,6 @@ app.listen(3000,()=>{
     console.log("Connected");
 
 })
-
-app.get("/",(req,res)=>{
-    res.send("App working");
-})
  
 main().then((res)=>{
 console.log("Connected to database");
@@ -31,7 +27,10 @@ console.log("Connected to database");
 async function main(){
    await mongoose.connect("mongodb://127.0.0.1:27017/ChatApp");
 }
- 
+ app.get("/",async(req,res)=>{
+    let c= await chat.find();
+    res.render("index.ejs",{c});
+})
 app.get("/chats",async(req,res)=>{
     let c= await chat.find();
     res.render("index.ejs",{c});
